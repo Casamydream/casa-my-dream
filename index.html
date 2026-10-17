@@ -1,0 +1,209 @@
+<meta charset="UTF-8">
+<title>Casa My Dream</title>
+<meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --nero:#0E0E0E;
+    --oro:#AD8330;
+    --oro-soft:#D9B36E;
+    --calce:#F4EFE6;
+    --tufo:#E8DCC4;
+    --terracotta:#A8512E;
+    --ulivo:#6B7355;
+    --text:#2A2520;
+    --text-soft:#6b6356;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0; background:var(--calce); color:var(--text);
+    font-family:'Jost', sans-serif; font-weight:300;
+    font-size:17px; line-height:1.7;
+  }
+  h1,h2{font-family:'Cormorant Garamond', serif; font-weight:600; margin:0;}
+  img{max-width:100%; display:block;}
+  a{color:inherit;}
+
+  /* HERO */
+  .hero{
+    background:var(--nero); color:var(--calce);
+    padding:72px 24px 56px;
+    text-align:center;
+    position:relative;
+  }
+  .hero-logo{width:120px; margin:0 auto 20px;}
+  .hero h1{
+    font-size:clamp(32px,6vw,48px);
+    letter-spacing:1px; color:var(--calce);
+  }
+  .hero .tag{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic; color:var(--oro-soft);
+    font-size:19px; margin-top:10px;
+  }
+  .hero .loc{
+    font-size:12.5px; letter-spacing:2px; text-transform:uppercase;
+    color:var(--tufo); margin-top:22px; opacity:0.8;
+  }
+
+  /* NARRATIVE */
+  .wrap{max-width:620px; margin:0 auto; padding:0 24px;}
+  .story{padding:64px 0 8px;}
+  .quote{
+    font-family:'Cormorant Garamond', serif; font-style:italic;
+    font-size:clamp(20px,3vw,24px); line-height:1.55;
+    color:var(--text); margin:0 0 14px;
+  }
+  .quote-by{
+    font-size:13px; letter-spacing:1.5px; text-transform:uppercase;
+    color:var(--terracotta); font-weight:500;
+  }
+  .divider{
+    width:40px; height:2px; background:var(--oro); border:none;
+    margin:40px auto;
+  }
+  .story p{font-size:18px; margin:0 0 26px;}
+  .story p.lede{font-size:20px; color:var(--text);}
+  .names{color:var(--terracotta); font-weight:500;}
+  .close-line{
+    font-family:'Cormorant Garamond', serif; font-style:italic;
+    font-size:24px; color:var(--nero); text-align:center;
+    margin:48px 0 0;
+  }
+
+  /* GALLERY */
+  .gallery{margin:56px 0;}
+  .gallery figure{margin:0;}
+  .gallery img{
+    border-radius:4px; width:100%; height:100%; object-fit:cover;
+    box-shadow:0 12px 40px rgba(14,14,14,0.16);
+  }
+  .gallery-lead img{aspect-ratio:4/3;}
+  .gallery-row{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:14px;
+    margin-top:14px;
+  }
+  .gallery-row img{aspect-ratio:1/1;}
+  .gallery figcaption{
+    font-size:12.5px; color:var(--text-soft); text-align:center;
+    margin-top:10px; letter-spacing:0.2px;
+  }
+
+  /* INFO STRIP */
+  .info{
+    background:var(--tufo);
+    margin-top:72px; padding:48px 24px;
+  }
+  .info-grid{
+    max-width:620px; margin:0 auto;
+    display:grid; grid-template-columns:1fr 1fr; gap:28px 20px;
+  }
+  @media (max-width:480px){.info-grid{grid-template-columns:1fr;}}
+  .info-item .k{
+    font-size:11px; letter-spacing:1.5px; text-transform:uppercase;
+    color:var(--terracotta); font-weight:500; margin-bottom:6px;
+  }
+  .info-item .v{font-size:16px; color:var(--text);}
+
+  /* CONTACT */
+  .contact{
+    background:var(--nero); color:var(--calce);
+    text-align:center; padding:56px 24px 64px;
+  }
+  .contact h2{color:var(--calce); font-size:26px; margin-bottom:22px; font-weight:500; font-style:italic;}
+  .wa-btn{
+    display:inline-flex; align-items:center; gap:10px;
+    background:var(--oro); color:var(--nero);
+    font-family:'Jost',sans-serif; font-weight:500; font-size:16px;
+    padding:15px 30px; border-radius:30px; text-decoration:none;
+    transition:transform .15s ease, background .15s ease;
+  }
+  .wa-btn:hover{background:var(--oro-soft); transform:translateY(-1px);}
+  .wa-btn svg{width:20px; height:20px; flex-shrink:0;}
+  .contact .alt{font-size:14px; color:var(--tufo); margin-top:18px; opacity:0.85;}
+  .contact .alt a{text-decoration:underline; text-decoration-color:var(--oro);}
+
+  footer{
+    text-align:center; padding:26px 24px 40px;
+    font-size:12px; color:var(--text-soft); background:var(--calce);
+  }
+</style>
+
+<section class="hero">
+  <img class="hero-logo" src="logo.png" alt="Casa My Dream">
+  <h1>CASA MY DREAM</h1>
+  <div class="tag">..il Mulino dei Sogni..</div>
+  <div class="loc">Matera · Sassi</div>
+</section>
+
+<div class="wrap">
+  <div class="story">
+    <p class="quote">"Per tanti anni ho portato dentro di me un sogno. Un sogno semplice, ma grande: avere un posticino tutto mio. Una sala raccolta, intima, da curare personalmente. Un luogo dove potessi accogliere le persone come si fa in famiglia, con i sapori autentici della nostra terra. Quel sogno l'ho custodito a lungo, e quando finalmente si è realizzato, l'ho chiamato My Dream. Perché non c'era nome più vero di questo."</p>
+    <div class="quote-by">— Franco</div>
+
+    <hr class="divider">
+
+    <p class="lede">Per una vita ha accolto gli ospiti degli altri. A sessant'anni ha aperto la sua tavola. Ora apre anche la sua porta.</p>
+
+    <p>A pochi passi da quella tavola, dentro i Sassi di Matera, c'è la casa. Due stanze — <span class="names">Grano</span> e <span class="names">Ulivo</span>, come la terra qui intorno — con un arco dipinto color tufo che accoglie chi entra, la pietra viva alle pareti, la luce calda delle sere lucane.</p>
+
+    <p>La colazione è a due passi. E se la sera si vuole restare, da Franco c'è sempre un posto a tavola.</p>
+  </div>
+
+  <div class="gallery">
+    <figure class="gallery-lead">
+      <img src="camera-ulivo.jpg" alt="La camera Ulivo, con l'arco dipinto e lo specchio">
+      <figcaption>La camera Ulivo, con l'arco dipinto color terracotta e lo specchio</figcaption>
+    </figure>
+    <div class="gallery-row">
+      <figure>
+        <img src="camera-grano.jpg" alt="La camera Grano, con i due letti singoli">
+      </figure>
+      <figure>
+        <img src="salotto.jpg" alt="Il salotto, con il divano e l'arco nella zona giorno">
+      </figure>
+      <figure>
+        <img src="pranzo.jpg" alt="La zona pranzo">
+      </figure>
+    </div>
+  </div>
+
+  <p class="close-line">Questa porta, ora, è aperta anche per voi.</p>
+</div>
+
+<div class="info">
+  <div class="info-grid">
+    <div class="info-item">
+      <div class="k">Dove</div>
+      <div class="v">Recinto Mario Pagano 13<br>75100 Matera</div>
+    </div>
+    <div class="info-item">
+      <div class="k">A due passi da</div>
+      <div class="v">Ristorante My Dream<br>Piazza Mulino 17</div>
+    </div>
+    <div class="info-item">
+      <div class="k">Check-in</div>
+      <div class="v">dalle 15:00</div>
+    </div>
+    <div class="info-item">
+      <div class="k">Check-out</div>
+      <div class="v">entro le 10:00</div>
+    </div>
+  </div>
+</div>
+
+<div class="contact">
+  <h2>Per bussare a questa porta</h2>
+  <a class="wa-btn" href="https://wa.me/393522308085" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.78 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01C17.19 3.04 14.7 2 12.04 2zm0 1.67c2.2 0 4.26.86 5.82 2.42a8.2 8.2 0 0 1 2.41 5.82c0 4.53-3.7 8.23-8.24 8.23a8.3 8.3 0 0 1-4.19-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.4c0-4.54 3.7-8.22 8.25-8.22zm-4.55 4.7c-.17 0-.44.06-.67.31s-.88.86-.88 2.1.9 2.43 1.03 2.6c.12.17 1.76 2.8 4.38 3.8 2.17.84 2.61.67 3.08.63.47-.04 1.52-.62 1.73-1.22.21-.6.21-1.11.15-1.22-.06-.1-.23-.17-.48-.29s-1.52-.75-1.76-.84c-.23-.08-.4-.12-.58.13s-.67.84-.82 1.01c-.15.17-.3.19-.56.06-.25-.13-1.07-.4-2.03-1.26-.75-.67-1.26-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.3.37-.44.12-.15.16-.25.24-.42.08-.17.04-.31-.02-.44-.06-.13-.58-1.44-.81-1.96-.2-.5-.42-.44-.58-.44z"/></svg>
+    Scrivi su WhatsApp
+  </a>
+  <div class="alt">oppure chiama <a href="tel:+393522308085">+39 352 230 8085</a></div>
+</div>
+
+<footer>
+  Casa My Dream — la casa del ristorante My Dream ..come una volta..
+</footer>
